@@ -1,0 +1,577 @@
+.fee-management-page88 {
+    padding: 20px;
+    background: #ffffff;
+    min-height: calc(100vh - 70px);
+}
+
+/* Header Section */
+.page-header88 {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.08);
+    border: 1px solid rgba(106, 91, 226, 0.1);
+}
+
+.header-content88 {
+    text-align: center;
+}
+
+.page-title88 {
+    font-size: 2.2rem;
+    color: #4C3B99;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+    background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle88 {
+    font-size: 1rem;
+    color: #6B7280;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Term Selection */
+.term-selection88 {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.08);
+}
+
+.term-buttons88 {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.term-btn88 {
+    padding: 12px 24px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    background: white;
+    color: #6B7280;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.term-btn88:hover {
+    border-color: #6A5BE2;
+    color: #6A5BE2;
+}
+
+.term-btn88.active88 {
+    background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+    color: white;
+    border-color: #6A5BE2;
+    box-shadow: 0 4px 12px rgba(76, 59, 153, 0.3);
+}
+
+/* Fee Summary Cards */
+.fee-summary-section88 {
+    margin-bottom: 24px;
+}
+
+.summary-cards88 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.summary-card88 {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.08);
+    border: 1px solid rgba(106, 91, 226, 0.1);
+    transition: all 0.3s ease;
+}
+
+.summary-card88:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(76, 59, 153, 0.12);
+}
+
+.card-icon88 {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(106, 91, 226, 0.1);
+}
+
+.card-content88 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-amount88 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #4C3B99;
+    line-height: 1;
+}
+
+.card-label88 {
+    font-size: 0.9rem;
+    color: #6B7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+/* Current Term Summary */
+.current-term-summary88 {
+    margin-bottom: 24px;
+}
+
+.term-info-card88 {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.08);
+    border: 1px solid rgba(106, 91, 226, 0.1);
+}
+
+.term-header88 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.term-header88 h3 {
+    color: #4C3B99;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.term-duration88 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f8f9ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+}
+
+.duration-label88 {
+    font-size: 0.85rem;
+    color: #6B7280;
+    font-weight: 600;
+}
+
+.duration-value88 {
+    font-size: 0.85rem;
+    color: #4C3B99;
+    font-weight: 700;
+}
+
+.term-stats88 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.term-stat88 {
+    text-align: center;
+    padding: 16px;
+    background: #f8f9ff;
+    border-radius: 12px;
+    border: 1px solid rgba(106, 91, 226, 0.1);
+}
+
+.stat-label88 {
+    display: block;
+    font-size: 0.8rem;
+    color: #6B7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.stat-value88 {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #4C3B99;
+}
+
+.stat-value88.paid88 {
+    color: #10B981;
+}
+
+.stat-value88.pending88 {
+    color: #EF4444;
+}
+
+.stat-value88.due88 {
+    color: #F59E0B;
+    font-size: 1rem;
+}
+
+/* Charts Section */
+.charts-section88 {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.08);
+}
+
+.charts-header88 {
+    margin-bottom: 24px;
+}
+
+.charts-header88 h2 {
+    font-size: 1.5rem;
+    color: #4C3B99;
+    font-weight: 700;
+    margin: 0;
+}
+
+.charts-container88 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.chart-card88 {
+    background: #f8f9ff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #E5E7EB;
+}
+
+.chart-content88 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.pie-chart-container88 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-chart88 {
+    width: 200px;
+    height: 200px;
+}
+
+.pie-segment88 {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pie-segment88:hover {
+    opacity: 0.8;
+}
+
+.pie-center-text88 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    fill: #4C3B99;
+}
+
+.chart-legend88 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.legend-item88 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+}
+
+.legend-color88 {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.legend-details88 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.legend-label88 {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.85rem;
+}
+
+.legend-value88 {
+    font-size: 0.75rem;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.legend-paid88 {
+    font-size: 0.7rem;
+    color: #10B981;
+    font-weight: 600;
+}
+
+.legend-percentage88 {
+    font-weight: 700;
+    color: #4C3B99;
+    font-size: 0.85rem;
+    min-width: 40px;
+    text-align: right;
+}
+
+/* Payment History Section */
+.payment-history-section88 {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.08);
+}
+
+.section-header88 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header88 h2 {
+    font-size: 1.5rem;
+    color: #4C3B99;
+    font-weight: 700;
+    margin: 0;
+}
+
+.section-subtitle88 {
+    background: #f8f9ff;
+    color: #4C3B99;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #E5E7EB;
+}
+
+.payment-table-container88 {
+    overflow-x: auto;
+}
+
+.payment-history-table88 {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.payment-history-table88 th {
+    background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+    color: white;
+    padding: 16px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.payment-row88 {
+    border-bottom: 1px solid #f8f9ff;
+    transition: background-color 0.3s ease;
+}
+
+.payment-row88:hover {
+    background: #f8f9ff;
+}
+
+.payment-history-table88 td {
+    padding: 16px 12px;
+    vertical-align: middle;
+}
+
+.date-cell88 {
+    font-weight: 600;
+    color: #374151;
+}
+
+.description-cell88 {
+    color: #6B7280;
+}
+
+.amount-cell88 {
+    font-weight: 700;
+    color: #4C3B99;
+}
+
+.method-cell88 {
+    text-align: center;
+}
+
+.method-badge88 {
+    background: #f8f9ff;
+    color: #4C3B99;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-badge88 {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge88.paid88 {
+    background: #ECFDF5;
+    color: #065F46;
+}
+
+.payment-total-row88 {
+    background: #f8f9ff;
+    font-weight: 700;
+}
+
+.payment-total-row88 td {
+    border-top: 2px solid #E5E7EB;
+    color: #4C3B99;
+    padding: 20px 12px;
+}
+
+/* Additional Information */
+.additional-info88 {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.08);
+}
+
+.info-cards88 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-card88 {
+    background: #f8f9ff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #E5E7EB;
+}
+
+.info-card88 h4 {
+    color: #4C3B99;
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+}
+
+.info-card88 ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #6B7280;
+}
+
+.info-card88 li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .summary-cards88 {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-content88 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .info-cards88 {
+        grid-template-columns: 1fr;
+    }
+    
+    .term-stats88 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fee-management-page88 {
+        padding: 15px;
+    }
+    
+    .term-buttons88 {
+        flex-direction: column;
+    }
+    
+    .charts-header88 {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    
+    .section-header88 {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .term-stats88 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title88 {
+        font-size: 1.8rem;
+    }
+    
+    .pie-chart88 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .payment-history-table88 {
+        font-size: 0.8rem;
+    }
+    
+    .payment-history-table88 th,
+    .payment-history-table88 td {
+        padding: 12px 8px;
+    }
+}

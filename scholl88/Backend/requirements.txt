@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic-settings
+mysql-connector-python
+pymysql
+pydantic-settings
+python-multipart
+

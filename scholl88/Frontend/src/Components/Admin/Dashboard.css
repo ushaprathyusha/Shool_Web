@@ -1,0 +1,15 @@
+.dashboard-container {
+  display: flex;
+  background: #f8f9fc;
+  /* min-height: 100vh; */
+}
+.dashboard-content {
+  /* margin-left: 230px; */
+  flex-grow: 1;
+  background: #f8f9fc;
+  transition: 0.3s;
+}
+.chart-box {
+  background: white;
+  border-radius: 12px;
+}

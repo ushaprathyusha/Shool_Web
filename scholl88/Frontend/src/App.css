@@ -1,0 +1,424 @@
+.App {
+  font-family: "Poppins", sans-serif;
+  background: #f7f8fc;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ---------- Admin Layout ---------- */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.admin-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 260px;
+  background: #4C3B99;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.admin-sidebar.collapsed {
+  width: 80px;
+}
+
+.admin-main-content {
+  flex: 1;
+  margin-left: 260px;
+  background: #f8fafc;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  width: calc(100% - 260px);
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.admin-main-content.expanded {
+  margin-left: 80px;
+  width: calc(100% - 80px);
+}
+
+/* ---------- Staff Layout ---------- */
+.staff-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.staff-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.staff-sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #059669, #047857);
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.staff-main {
+  flex: 1;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.staff-content {
+  flex: 1;
+  padding: 30px;
+  background: #f9fafb;
+}
+
+/* ---------- Buttons ---------- */
+.switch-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1001;
+}
+
+.switch-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.5);
+}
+
+.switch-btn.back {
+  background: linear-gradient(90deg, #059669, #10b981);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .admin-sidebar {
+    width: 220px;
+  }
+  
+  .admin-main-content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+  
+  .admin-sidebar.collapsed {
+    width: 70px;
+  }
+  
+  .admin-main-content.expanded {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 70px;
+    transform: translateX(-100%);
+  }
+  
+  .admin-sidebar.open {
+    transform: translateX(0);
+    width: 260px;
+  }
+  
+  .admin-main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .staff-sidebar {
+    width: 70px;
+  }
+  
+  .staff-main {
+    margin-left: 70px;
+  }
+  
+  .admin-main-content,
+  .staff-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-sidebar.open {
+    width: 100%;
+  }
+  
+  .staff-sidebar {
+    width: 60px;
+  }
+  
+  .staff-main {
+    margin-left: 60px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5b4fc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+/* Ensure no horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+.admin-main-content > * {
+  max-width: 100%;
+}
+
+/* Animation for page transitions */
+.page-transition {
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* App.css - Updated for header integration */
+
+/* Admin Layout Styles */
+.admin-layout {
+  position: relative;
+  min-height: 100vh;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.admin-sidebar.collapsed {
+  width: 80px;
+}
+
+.admin-sidebar.mobile-hidden {
+  transform: translateX(-100%);
+}
+
+.admin-main-content {
+  margin-left: 260px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+}
+
+.admin-main-content.expanded {
+  margin-left: 80px;
+}
+
+/* Staff Layout Styles */
+.staff-layout {
+  position: relative;
+  min-height: 100vh;
+}
+
+.staff-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.staff-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.staff-sidebar.collapsed {
+  width: 80px;
+}
+
+.staff-sidebar.mobile-hidden {
+  transform: translateX(-100%);
+}
+
+.staff-main {
+  margin-left: 260px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+}
+
+.staff-main.expanded {
+  margin-left: 80px;
+}
+
+.staff-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Parent Layout Styles */
+.parent-layout {
+  position: relative;
+  min-height: 100vh;
+}
+
+.parent-container {
+  min-height: 100vh;
+}
+
+/* Mode Switch Buttons */
+.mode-switch-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.switch-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}
+
+.switch-btn.staff {
+  background: #4C3B99;
+  color: white;
+}
+
+.switch-btn.parent {
+  background: #059669;
+  color: white;
+}
+
+.switch-btn.back {
+  background: #dc2626;
+  color: white;
+}
+
+.switch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Integration */
+.admin-main-content > .header-00209,
+.staff-main > .header-00209 {
+  flex-shrink: 0;
+}
+
+/* Page Content Area */
+.admin-main-content > :not(.header-00209),
+.staff-main > .staff-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-main-content,
+  .staff-main {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  
+  .admin-sidebar.collapsed,
+  .staff-sidebar.collapsed {
+    width: 0;
+  }
+  
+  .mode-switch-buttons {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .switch-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+  
+  .staff-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mode-switch-buttons {
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .switch-btn {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+  
+  .staff-content {
+    padding: 10px;
+  }
+}

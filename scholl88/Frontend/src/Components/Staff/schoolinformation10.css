@@ -1,0 +1,851 @@
+.school-information-page09 {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8eaff 100%);
+  padding: 15px 10px;
+  overflow-y: auto;
+}
+
+.page-container09 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 100%;
+}
+
+/* Header Styles */
+.page-header09 {
+  text-align: center;
+}
+
+.header-content09 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(76, 59, 153, 0.1);
+}
+
+.title-icon09 {
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, #4C3B99, #6A5BE2);
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.page-title09 {
+  font-size: 1.3rem;
+  color: #4C3B99;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-subtitle09 {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 2px 0 0 0;
+  font-weight: 500;
+}
+
+/* Content Grid */
+.content-grid09 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.content-card09 {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-title09 {
+  font-size: 1rem;
+  color: #4C3B99;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sub-title09 {
+  font-size: 0.9rem;
+  color: #4C3B99;
+  font-weight: 600;
+  margin: 15px 0 10px 0;
+}
+
+/* Info Section */
+.info-section09 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item09 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px;
+  background: #f8f9ff;
+  border-radius: 8px;
+}
+
+.info-icon09 {
+  font-size: 1.2rem;
+  background: white;
+  padding: 6px;
+  border-radius: 6px;
+  color: #4C3B99;
+  flex-shrink: 0;
+}
+
+.info-content09 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.info-label09 {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.info-value09 {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+/* Stats Grid */
+.stats-grid09 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.stat-item09 {
+  background: linear-gradient(135deg, #f8f9ff, #f0f2ff);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #4C3B99;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-icon09 {
+  font-size: 1.3rem;
+  background: white;
+  padding: 6px;
+  border-radius: 6px;
+  color: #4C3B99;
+}
+
+.stat-content09 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-number09 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #4C3B99;
+}
+
+.stat-label09 {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 600;
+}
+
+/* Facilities List */
+.facilities-list09 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.facility-item09 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: #f8f9ff;
+  border-radius: 6px;
+}
+
+.facility-icon09 {
+  font-size: 0.9rem;
+  color: #4C3B99;
+}
+
+.facility-name09 {
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Contacts List */
+.contacts-list09 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item09 {
+  background: #f8f9ff;
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 3px solid #6A5BE2;
+}
+
+.contact-header09 {
+  margin-bottom: 8px;
+}
+
+.contact-name09 {
+  font-weight: 700;
+  color: #4C3B99;
+  font-size: 0.9rem;
+}
+
+.contact-details09 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-phone09,
+.contact-email09 {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Dates List */
+.dates-list09 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date-item09 {
+  background: #f8f9ff;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-name09 {
+  font-weight: 600;
+  color: #4C3B99;
+  font-size: 0.85rem;
+}
+
+.event-date09 {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .school-information-page09 {
+    padding: 10px 8px;
+  }
+  
+  .header-content09 {
+    padding: 12px;
+    gap: 10px;
+  }
+  
+  .title-icon09 {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+  
+  .page-title09 {
+    font-size: 1.1rem;
+  }
+  
+  .page-subtitle09 {
+    font-size: 0.75rem;
+  }
+  
+  .content-card09 {
+    padding: 12px;
+  }
+  
+  .card-title09 {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+  
+  .info-item09 {
+    padding: 8px;
+    gap: 10px;
+  }
+  
+  .info-icon09 {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  
+  .info-value09 {
+    font-size: 0.8rem;
+  }
+  
+  .stats-grid09 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .stat-item09 {
+    padding: 10px;
+  }
+  
+  .contact-item09,
+  .date-item09 {
+    padding: 10px;
+  }
+  
+  .event-name09 {
+    font-size: 0.8rem;
+  }
+  
+  .event-date09 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .school-information-page09 {
+    padding: 8px 6px;
+  }
+  
+  .header-content09 {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .date-item09 {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+  
+  .info-item09 {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .info-content09 {
+    text-align: center;
+  }
+}
+
+/* Additional styles for the school information layout */
+.stats-row09 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-card09 {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stat-icon09 {
+  font-size: 1.5rem;
+  background: #f8f9ff;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.stat-info09 {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number09 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #4C3B99;
+}
+
+.stat-label09 {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.main-grid09 {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 20px;
+}
+
+.column09 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-card09 {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card-header09 {
+  background: linear-gradient(135deg, #4C3B99, #6A5BE2);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header09 h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-badge09 {
+  background: rgba(255,255,255,0.2);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.card-content09 {
+  padding: 15px;
+}
+
+.school-header09 {
+  background: linear-gradient(135deg, #4C3B99, #6A5BE2);
+  color: white;
+  padding: 20px;
+}
+
+.header-content09 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.school-logo-main09 {
+  font-size: 3rem;
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.school-info-main09 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.school-name09 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.school-motto09 {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.school-badges09 {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badge09 {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.badge09.established09 {
+  background: #28a745;
+}
+
+.badge09.accredited09 {
+  background: #17a2b8;
+}
+
+.info-navigation09 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-btn09 {
+  padding: 12px 15px;
+  background: #f8f9ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.nav-btn09.active09 {
+  background: linear-gradient(135deg, #4C3B99, #6A5BE2);
+  color: white;
+}
+
+.nav-btn09:hover:not(.active09) {
+  background: #e8eaff;
+}
+
+.info-list09 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item09 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  background: #f8f9ff;
+  border-radius: 8px;
+}
+
+.info-item09 strong {
+  color: #4C3B99;
+  font-size: 0.8rem;
+}
+
+.info-value09 {
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 500;
+  text-align: right;
+}
+
+.highlight-number09 {
+  color: #4C3B99;
+  font-weight: 700;
+}
+
+.info-content09 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-section09 h2 {
+  color: #4C3B99;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.basic-info-grid09 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.info-card09 {
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.info-card09 h3 {
+  color: #4C3B99;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.vision-mission-content09 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vision-item09, .mission-item09 {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #4C3B99;
+}
+
+.vision-item09 h4, .mission-item09 h4 {
+  color: #4C3B99;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.vision-item09 p, .mission-item09 p {
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.infrastructure-grid09 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.infrastructure-card09 {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.infra-icon09 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.infrastructure-card09 h4 {
+  color: #4C3B99;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.infra-stats09 {
+  margin-bottom: 15px;
+}
+
+.infra-number09 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #4C3B99;
+  display: block;
+}
+
+.infra-label09 {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.infra-features09 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.feature-tag09 {
+  background: #f8f9ff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #4C3B99;
+}
+
+.subjects-grid09 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.subject-level09 {
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.subject-level09 h4 {
+  color: #4C3B99;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subject-list09 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.subject-tag09 {
+  background: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #4C3B99;
+  border: 1px solid #e0e0e0;
+}
+
+.facilities-grid09 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.facility-card09 {
+  background: #f8f9ff;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.facility-icon09 {
+  font-size: 1.2rem;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  color: #4C3B99;
+}
+
+.facility-card09 h4 {
+  color: #4C3B99;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.facility-card09 p {
+  font-size: 0.7rem;
+  color: #666;
+  margin: 0;
+}
+
+.sports-grid09 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sports-type09 h4 {
+  color: #4C3B99;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.sports-list09 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sport-tag09 {
+  background: #f8f9ff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #4C3B99;
+  border: 1px solid #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .main-grid09 {
+    grid-template-columns: 280px 1fr 280px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-grid09 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .column09 {
+    gap: 15px;
+  }
+  
+  .basic-info-grid09 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-row09 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .infrastructure-grid09 {
+    grid-template-columns: 1fr;
+  }
+  
+  .subjects-grid09 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-row09 {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-card09 {
+    padding: 12px;
+  }
+  
+  .main-grid09 {
+    gap: 15px;
+  }
+  
+  .info-card09 {
+    padding: 15px;
+  }
+  
+  .infrastructure-card09 {
+    padding: 15px;
+  }
+  
+  .facility-card09 {
+    padding: 12px;
+  }
+}

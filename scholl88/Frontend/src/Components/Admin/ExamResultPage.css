@@ -1,0 +1,106 @@
+.exam-page {
+  padding: 40px;
+  /* margin-left: 250px; */
+  min-height: 100vh;
+  background: #ffffff;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.5s ease;
+}
+
+/* Title */
+.exam-title {
+  font-size: 2rem;
+  color: #1c1463;
+  margin-bottom: 10px;
+}
+
+.exam-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #5e4bff;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.exam-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 35px;
+}
+
+/* ---------------- SUMMARY CARDS ---------------- */
+.summary-card {
+  border-radius: 16px;
+  padding: 25px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.summary-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(94, 75, 255, 0.3);
+}
+
+.bg-success-gradient {
+  background: linear-gradient(135deg, #5e4bff, #00b894);
+}
+
+.bg-warning-gradient {
+  background: linear-gradient(135deg, #ffb400, #ff7f50);
+}
+
+.bg-danger-gradient {
+  background: linear-gradient(135deg, #ff4757, #8b0000);
+}
+
+/* ---------------- TABLE ---------------- */
+.table-header {
+  background: #5e4bff;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px 12px 0 0;
+}
+
+.table th,
+.table td {
+  padding: 14px;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------------- BADGES ---------------- */
+.badge {
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+  .exam-page {
+    margin-left: 0;
+    padding: 25px;
+  }
+  .exam-title {
+    font-size: 1.7rem;
+  }
+  .summary-card {
+    padding: 20px;
+  }
+}

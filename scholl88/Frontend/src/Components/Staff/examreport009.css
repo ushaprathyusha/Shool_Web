@@ -1,0 +1,737 @@
+.exam-report-page09 {
+  height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8eaff 100%);
+  padding: 15px 20px;
+  overflow: hidden;
+}
+
+.page-container09 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header09 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.page-title09 {
+  font-size: 1.4rem;
+  color: #4C3B99;
+  font-weight: 700;
+  margin: 0;
+}
+
+.view-toggle09 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.toggle-btn09 {
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.toggle-btn09.active09 {
+  background: linear-gradient(135deg, #4C3B99, #6A5BE2);
+  color: white;
+  border-color: #4C3B99;
+}
+
+.toggle-btn09:hover:not(.active09) {
+  border-color: #6A5BE2;
+  color: #4C3B99;
+}
+
+.content-card09 {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Reports Section */
+.reports-section09, .analytics-section09 {
+  flex: 1;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section-header09 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section-header09 h3 {
+  color: #4C3B99;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.total-count09, .analytics-summary09 {
+  background: #f8f9ff;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4C3B99;
+}
+
+.highlight09 {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.table-container09 {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.reports-table09 {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.8rem;
+}
+
+.reports-table09 thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.reports-table09 th {
+  background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+  color: white;
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border: none;
+}
+
+.report-row09 {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.report-row09:hover {
+  background-color: #f8f9ff;
+}
+
+.reports-table09 td {
+  padding: 10px;
+  font-size: 0.8rem;
+  border: none;
+  border-bottom: 1px solid #f8f8f8;
+  vertical-align: middle;
+}
+
+.student-name09 {
+  font-weight: 600;
+  color: #333;
+}
+
+.student-class09, .student-section09 {
+  color: #666;
+  font-weight: 500;
+}
+
+.parent-mobile09 {
+  font-family: monospace;
+  color: #4C3B99;
+  font-weight: 500;
+}
+
+.percentage-badge09, .attendance-badge09 {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.attendance-badge09 {
+  background: #17a2b8;
+}
+
+.actions09 {
+  display: flex;
+  gap: 6px;
+}
+
+.action-btn09 {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.view-btn09 {
+  background: #17a2b8;
+  color: white;
+}
+
+.share-btn09 {
+  background: #28a745;
+  color: white;
+}
+
+.action-btn09:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* Analytics Section */
+.analytics-grid09 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  height: 100%;
+}
+
+.analytics-card09 {
+  background: #f8f9ff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.analytics-card09 h4 {
+  color: #4C3B99;
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* Subject Bars */
+.subject-bars09 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subject-bar09 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subject-name09 {
+  min-width: 80px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.bar-container09 {
+  flex: 1;
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  position: relative;
+}
+
+.performance-bar09 {
+  height: 100%;
+  background: linear-gradient(135deg, #4C3B99, #6A5BE2);
+  border-radius: 10px;
+  position: relative;
+  transition: width 0.3s ease;
+}
+
+.bar-label09 {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.performance-stats09 {
+  display: flex;
+  gap: 8px;
+  font-size: 0.7rem;
+}
+
+.strong09 { color: #28a745; font-weight: 600; }
+.weak09 { color: #dc3545; font-weight: 600; }
+
+/* Attendance Chart */
+.attendance-chart09 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.chart-circle09 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f8f9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-progress09 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-text09 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #4C3B99;
+}
+
+.attendance-stats09 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-item09 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.stat-item09.good09 {
+  background: #d4edda;
+  color: #155724;
+}
+
+.stat-item09.needs-improvement09 {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.stat-label09 {
+  font-weight: 600;
+}
+
+.stat-value09 {
+  font-weight: 700;
+}
+
+/* Insights */
+.analytics-card09.insights09 {
+  grid-column: 1 / -1;
+}
+
+.insights-list09 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.insight-item09 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  border-radius: 6px;
+  border-left: 4px solid #ffc107;
+}
+
+.insight-icon09 {
+  font-size: 1rem;
+}
+
+.insight-text09 {
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Modal Styles */
+.modal-overlay09 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.report-modal09 {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal-header09 {
+  background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.modal-header09 h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.close-btn09 {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.close-btn09:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-content09 {
+  padding: 20px;
+}
+
+.student-summary09 {
+  margin-bottom: 20px;
+}
+
+.summary-card09 {
+  background: #f8f9ff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.summary-card09 h4 {
+  color: #4C3B99;
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+}
+
+.summary-stats09 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.stat09 {
+  text-align: center;
+}
+
+.stat-label09 {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.stat-value09 {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4C3B99;
+}
+
+.subject-performance09 {
+  margin-bottom: 20px;
+}
+
+.subject-performance09 h4 {
+  color: #4C3B99;
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+}
+
+.marks-chart09 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subject-mark09 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.subject-info09 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.subject-name09 {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.subject-grade09 {
+  background: #4C3B99;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.mark-bar09 {
+  flex: 1;
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  position: relative;
+}
+
+.mark-fill09 {
+  height: 100%;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.mark-text09 {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.performance-analysis09 {
+  margin-bottom: 20px;
+}
+
+.performance-analysis09 h4 {
+  color: #4C3B99;
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+}
+
+.analysis-grid09 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.analysis-card09 {
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.analysis-card09.strong09 {
+  background: #d4edda;
+  border-left-color: #28a745;
+}
+
+.analysis-card09.weak09 {
+  background: #f8d7da;
+  border-left-color: #dc3545;
+}
+
+.analysis-card09 h5 {
+  margin: 0 0 10px 0;
+  font-size: 0.8rem;
+}
+
+.subjects-list09 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.subject-tag09 {
+  background: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.attendance-report09 h4 {
+  color: #4C3B99;
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+}
+
+.attendance-details09 {
+  background: #e3f2fd;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.attendance-stats09 {
+  display: flex;
+  gap: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1565c0;
+}
+
+.modal-actions09 {
+  padding: 15px 20px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+}
+
+.share-report-btn09 {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.share-report-btn09:hover {
+  background: linear-gradient(135deg, #218838 0%, #1e9e8a 100%);
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbars */
+.table-container09::-webkit-scrollbar,
+.report-modal09::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table-container09::-webkit-scrollbar-track,
+.report-modal09::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-container09::-webkit-scrollbar-thumb,
+.report-modal09::-webkit-scrollbar-thumb {
+  background: #6A5BE2;
+  border-radius: 3px;
+}
+
+.table-container09::-webkit-scrollbar-thumb:hover,
+.report-modal09::-webkit-scrollbar-thumb:hover {
+  background: #4C3B99;
+}
+
+/* Ensure no scrollbars on main page */
+.exam-report-page09 {
+  overflow: hidden;
+}
+
+.page-container09 {
+  overflow: hidden;
+}
+
+.content-card09 {
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .exam-report-page09 {
+    padding: 10px;
+  }
+  
+  .page-title09 {
+    font-size: 1.2rem;
+  }
+  
+  .analytics-grid09 {
+    grid-template-columns: 1fr;
+  }
+  
+  .analysis-grid09 {
+    grid-template-columns: 1fr;
+  }
+  
+  .attendance-chart09 {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .attendance-stats09 {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .report-modal09 {
+    width: 95%;
+    margin: 10px;
+  }
+  
+  .summary-stats09 {
+    grid-template-columns: 1fr;
+  }
+}

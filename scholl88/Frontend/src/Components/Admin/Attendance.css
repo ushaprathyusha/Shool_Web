@@ -1,0 +1,208 @@
+/* ------------------ PAGE LAYOUT ------------------ */
+.attendance-page {
+  padding: 30px;
+  /* space for sidebar */
+  min-height: 100vh;
+  background: #ffffff; /* white background */
+  color: #333;
+  transition: all 0.5s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------ FILTER SECTION ------------------ */
+.filters-section {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #5e4bff; /* sidebar accent color */
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.filter-input,
+.filter-select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  min-width: 180px;
+  transition: all 0.3s ease;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  outline: none;
+  border-color: #5e4bff;
+  box-shadow: 0 0 8px rgba(94, 75, 255, 0.3);
+}
+
+.export-btn {
+  border-radius: 12px;
+  padding: 10px 25px;
+  font-weight: 600;
+  background: #5e4bff;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.export-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(94, 75, 255, 0.3);
+}
+
+/* ------------------ SEARCH & FILTER (Old styles merged) ------------------ */
+.search-input {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #5e4bff;
+  box-shadow: 0 0 10px rgba(94, 75, 255, 0.3);
+}
+
+/* ------------------ BUTTONS ------------------ */
+.btn-light {
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------ ATTENDANCE TABLE ------------------ */
+.table-attendance {
+  background-color: #5e4bff; /* sidebar color */
+  font-weight: 600;
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.table tbody tr {
+  background: #4e3286;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(94, 75, 255, 0.08);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+/* ------------------ BADGES ------------------ */
+.badge {
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.bg-success {
+  background: #28a745 !important;
+}
+
+.bg-danger {
+  background: #dc3545 !important;
+}
+
+.bg-warning {
+  background: #ffc107 !important;
+  color: #000 !important;
+}
+
+/* ------------------ SUMMARY CARDS ------------------ */
+.summary-card {
+  border-left: 6px solid #1c1463;
+  transition: all 0.4s ease;
+  background-color: #5e4bff; /* sidebar color */
+  color: #fff;
+  cursor: default;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.summary-card h6 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.summary-card p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------ ANIMATIONS ------------------ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.attendance-page,
+.filters-section,
+.table,
+.summary-card {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 1024px) {
+  .attendance-page {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .filters-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-input,
+  .filter-select,
+  .search-input {
+    width: 100%;
+  }
+
+  .export-btn {
+    width: 100%;
+  }
+
+  .summary-card {
+    margin-bottom: 20px;
+  }
+}

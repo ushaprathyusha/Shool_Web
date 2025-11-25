@@ -1,0 +1,509 @@
+.exam-result-page09 {
+  height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8eaff 100%);
+  padding: 15px 20px;
+  overflow: hidden;
+}
+
+.page-container09 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header09 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.page-title09 {
+  font-size: 1.4rem;
+  color: #4C3B99;
+  font-weight: 700;
+  margin: 0;
+}
+
+.content-card09 {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Filters Section */
+.filters-section09 {
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8eaff 100%);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filters-grid09 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.filter-group09 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group09 label {
+  font-weight: 600;
+  color: #4C3B99;
+  font-size: 0.8rem;
+}
+
+.filter-input09 {
+  padding: 8px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  background: white;
+  height: 32px;
+}
+
+.filter-input09:focus {
+  outline: none;
+  border-color: #6A5BE2;
+  box-shadow: 0 0 0 2px rgba(106, 91, 226, 0.1);
+}
+
+.filter-btn09 {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6A5BE2 0%, #5a4bc9 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  height: 32px;
+}
+
+.filter-btn09:hover {
+  background: linear-gradient(135deg, #5a4bc9 0%, #4C3B99 100%);
+}
+
+/* Main Content Section */
+.main-content-section09 {
+  flex: 1;
+  padding: 15px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.left-section09, .right-section09 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.section-header09 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section-header09 h3 {
+  color: #4C3B99;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.marks-count09 {
+  background: #4C3B99;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Marks Input Section */
+.marks-input-section09 {
+  background: #f8f9ff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.input-group09 {
+  margin-bottom: 12px;
+}
+
+.input-group09 label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #4C3B99;
+  font-size: 0.8rem;
+}
+
+.input-field09 {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.input-field09:focus {
+  outline: none;
+  border-color: #6A5BE2;
+  box-shadow: 0 0 0 2px rgba(106, 91, 226, 0.1);
+}
+
+.save-btn09 {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.save-btn09:hover:not(:disabled) {
+  background: linear-gradient(135deg, #218838 0%, #1e9e8a 100%);
+  transform: translateY(-1px);
+}
+
+.save-btn09:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Table Sections */
+.students-table-section09, .marks-table-section09 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.table-container09 {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  flex: 1;
+  overflow-y: auto;
+  background: white;
+}
+
+.students-table09, .marks-table09 {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.75rem;
+  min-width: 400px;
+}
+
+.students-table09 thead, .marks-table09 thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.students-table09 th, .marks-table09 th {
+  background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+  color: white;
+  padding: 10px 8px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border: none;
+}
+
+.students-table09 tbody tr, .marks-table09 tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.students-table09 tbody tr:hover, .marks-table09 tbody tr:hover {
+  background-color: #f8f9ff;
+}
+
+.students-table09 td, .marks-table09 td {
+  padding: 8px;
+  font-size: 0.75rem;
+  border: none;
+  border-bottom: 1px solid #f8f8f8;
+  vertical-align: middle;
+}
+
+.student-name09, .mark-name09 {
+  font-weight: 600;
+  color: #333;
+}
+
+.student-class09, .student-section09, .mark-class09, .mark-section09 {
+  color: #666;
+  font-weight: 500;
+}
+
+.mark-subject09 {
+  font-weight: 600;
+  color: #4C3B99;
+}
+
+.mark-value09 {
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.mark-grade09 {
+  text-align: center;
+}
+
+.grade-badge09 {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+  min-width: 30px;
+  text-align: center;
+}
+
+.no-data09 {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Export Section */
+.export-section09 {
+  padding: 15px 20px;
+  background: #f8f9ff;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.export-btn09 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.export-btn09.excel09 {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.export-btn09.pdf09 {
+  background: linear-gradient(135deg, #dc3545 0%, #e74c3c 100%);
+  color: white;
+}
+
+.export-btn09:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Custom Scrollbars */
+.table-container09::-webkit-scrollbar {
+  width: 4px;
+}
+
+.table-container09::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-container09::-webkit-scrollbar-thumb {
+  background: #6A5BE2;
+  border-radius: 2px;
+}
+
+.table-container09::-webkit-scrollbar-thumb:hover {
+  background: #4C3B99;
+}
+
+/* Ensure no scrollbars on main page */
+.exam-result-page09 {
+  overflow: hidden;
+}
+
+.page-container09 {
+  overflow: hidden;
+}
+
+.content-card09 {
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-content-section09 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .left-section09, .right-section09 {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exam-result-page09 {
+    padding: 10px;
+    height: auto;
+    min-height: calc(100vh - 70px);
+    overflow: visible;
+  }
+  
+  .page-title09 {
+    font-size: 1.2rem;
+  }
+  
+  .filters-grid09 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .filter-group09 label {
+    font-size: 0.75rem;
+  }
+  
+  .filter-input09 {
+    height: 36px;
+    font-size: 0.85rem;
+  }
+  
+  .filter-btn09 {
+    height: 36px;
+    font-size: 0.85rem;
+  }
+  
+  .main-content-section09 {
+    padding: 10px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .marks-input-section09 {
+    padding: 12px;
+  }
+  
+  .input-group09 label {
+    font-size: 0.75rem;
+  }
+  
+  .input-field09 {
+    font-size: 0.85rem;
+  }
+  
+  .save-btn09 {
+    font-size: 0.85rem;
+    padding: 12px;
+  }
+  
+  .table-container09 {
+    overflow-x: auto;
+  }
+  
+  .students-table09, .marks-table09 {
+    min-width: 450px;
+  }
+  
+  .students-table09 th,
+  .students-table09 td,
+  .marks-table09 th,
+  .marks-table09 td {
+    padding: 8px 6px;
+    font-size: 0.7rem;
+  }
+  
+  .export-section09 {
+    flex-direction: column;
+    padding: 12px 15px;
+  }
+  
+  .export-btn09 {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .exam-result-page09 {
+    padding: 8px;
+  }
+  
+  .page-title09 {
+    font-size: 1.1rem;
+  }
+  
+  .filters-section09 {
+    padding: 12px 15px;
+  }
+  
+  .main-content-section09 {
+    padding: 8px;
+  }
+  
+  .section-header09 h3 {
+    font-size: 0.9rem;
+  }
+  
+  .marks-input-section09 {
+    padding: 10px;
+  }
+  
+  .students-table09,
+  .marks-table09 {
+    min-width: 400px;
+  }
+  
+  .students-table09 th,
+  .students-table09 td,
+  .marks-table09 th,
+  .marks-table09 td {
+    padding: 6px 4px;
+    font-size: 0.65rem;
+  }
+  
+  .grade-badge09 {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+    min-width: 25px;
+  }
+}

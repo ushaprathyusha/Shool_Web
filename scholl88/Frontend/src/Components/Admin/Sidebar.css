@@ -1,0 +1,357 @@
+/* Sidebar Container */
+.sidebar-container77 {
+  width: 260px;
+  background: #4C3B99;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-y: auto;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+
+.sidebar-container77.collapsed77 {
+  width: 80px;
+}
+
+/* Sidebar Header */
+.sidebar-header77 {
+  padding: 20px 15px;
+  border-bottom: 1px solid rgba(106, 91, 226, 0.5);
+  background: rgba(106, 91, 226, 0.2);
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.school-brand77 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.school-logo77 {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.school-logo77::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: rotate(45deg);
+  animation: logoShine77 4s infinite;
+}
+
+@keyframes logoShine77 {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.logo-icon77 {
+  font-size: 1.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  position: relative;
+  z-index: 1;
+}
+
+.school-info77 {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.school-name77 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.school-motto77 {
+  font-size: 0.65rem;
+  font-weight: 500;
+  margin: 3px 0 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+}
+
+.toggle-btn77 {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.toggle-btn77:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(90deg);
+}
+
+/* Admin Portal Section */
+.admin-portal-section77 {
+  padding: 15px 15px 8px 15px;
+}
+
+.admin-portal-label77 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #d0c6ff;
+  text-align: center;
+  padding: 8px;
+  background: rgba(106, 91, 226, 0.3);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+/* Sidebar Menu */
+.sidebar-menu77 {
+  flex: 1;
+  padding: 8px 0;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-section77 {
+  margin-bottom: 2px;
+}
+
+.nav-item77 {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  border-left: 3px solid transparent;
+  font-size: 0.85rem;
+  margin: 0 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item77:hover {
+  background: rgba(106, 91, 226, 0.6);
+  border-left-color: #FFFFFF;
+  transform: translateX(3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item77.active77 {
+  background: #6A5BE2;
+  border-left-color: #FFFFFF;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(106, 91, 226, 0.3);
+}
+
+.icon77 {
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-item77:hover .icon77 {
+  transform: rotate(8deg) scale(1.1);
+}
+
+.link-text77 {
+  font-size: 0.82rem;
+  font-weight: 500;
+  flex: 1;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+/* Sidebar Footer */
+.sidebar-footer77 {
+  padding: 15px;
+  border-top: 1px solid rgba(106, 91, 226, 0.5);
+  background: rgba(76, 59, 153, 0.3);
+}
+
+.logout-btn77 {
+  width: 100%;
+  padding: 10px;
+  background: #6A5BE2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn77:hover {
+  background: #5a4bc9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logout-icon77 {
+  font-size: 0.9rem;
+}
+
+/* Scrollbar Styling */
+.sidebar-menu77::-webkit-scrollbar {
+  width: 3px;
+}
+
+.sidebar-menu77::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.sidebar-menu77::-webkit-scrollbar-thumb {
+  background: rgba(106, 91, 226, 0.6);
+  border-radius: 2px;
+}
+
+.sidebar-menu77::-webkit-scrollbar-thumb:hover {
+  background: rgba(106, 91, 226, 0.8);
+}
+
+/* Collapsed State Styles */
+.sidebar-container77.collapsed77 .school-info77,
+.sidebar-container77.collapsed77 .admin-portal-label77,
+.sidebar-container77.collapsed77 .link-text77 {
+  display: none;
+}
+
+.sidebar-container77.collapsed77 .school-brand77 {
+  justify-content: center;
+}
+
+.sidebar-container77.collapsed77 .nav-item77 {
+  justify-content: center;
+  padding: 12px;
+}
+
+.sidebar-container77.collapsed77 .icon77 {
+  margin-right: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .sidebar-container77 {
+    transform: translateX(-100%);
+    width: 280px;
+  }
+  
+  .sidebar-container77.open77 {
+    transform: translateX(0);
+  }
+  
+  .sidebar-header77 {
+    padding: 15px 12px;
+    min-height: 80px;
+  }
+  
+  .school-logo77 {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-icon77 {
+    font-size: 1.3rem;
+  }
+  
+  .school-name77 {
+    font-size: 1rem;
+  }
+  
+  .school-motto77 {
+    font-size: 0.6rem;
+  }
+  
+  .nav-item77 {
+    padding: 15px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .icon77 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-container77 {
+    width: 100%;
+  }
+  
+  .sidebar-header77 {
+    padding: 12px 10px;
+  }
+  
+  .school-brand77 {
+    gap: 10px;
+  }
+  
+  .school-logo77 {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .logo-icon77 {
+    font-size: 1.2rem;
+  }
+  
+  .school-name77 {
+    font-size: 0.95rem;
+  }
+  
+  .nav-item77 {
+    padding: 12px 10px;
+  }
+}

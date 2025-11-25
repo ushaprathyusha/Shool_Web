@@ -1,0 +1,595 @@
+.student-profile-page88 {
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9ff 0%, #e8eaff 100%);
+    min-height: calc(100vh - 70px);
+}
+
+/* Compact Header Section */
+.profile-header-compact88 {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.1);
+    border: 1px solid rgba(106, 91, 226, 0.1);
+}
+
+.compact-header-content88 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.student-basic-compact88 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.student-avatar-compact88 {
+    width: 60px;
+    height: 60px;
+}
+
+.avatar-placeholder88 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.student-info-compact88 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.student-name-compact88 {
+    font-size: 1.5rem;
+    color: #4C3B99;
+    font-weight: 800;
+    margin: 0;
+}
+
+.student-details-compact88 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detail-item88 {
+    font-size: 0.85rem;
+    color: #6B7280;
+    font-weight: 600;
+    background: #f8f9ff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+}
+
+.header-stats-compact88 {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item-compact88 {
+    text-align: center;
+    min-width: 80px;
+}
+
+.stat-value-compact88 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #4C3B99;
+    line-height: 1;
+}
+
+.stat-label-compact88 {
+    font-size: 0.75rem;
+    color: #6B7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+/* Navigation Tabs */
+.profile-tabs88 {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 2px 10px rgba(76, 59, 153, 0.1);
+}
+
+.tab-btn88 {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    background: transparent;
+    color: #6B7280;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.tab-btn88:hover {
+    background: #f8f9ff;
+    color: #4C3B99;
+}
+
+.tab-btn88.active88 {
+    background: linear-gradient(135deg, #4C3B99 0%, #6A5BE2 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(76, 59, 153, 0.3);
+}
+
+/* Profile Content Grid */
+.profile-content88 {
+    background: transparent;
+}
+
+.overview-grid88 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.activities-grid88 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* Widget Styles */
+.profile-widget88 {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(76, 59, 153, 0.1);
+    border: 1px solid rgba(106, 91, 226, 0.1);
+}
+
+.widget-header88 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f8f9ff;
+    padding-bottom: 16px;
+}
+
+.widget-header88 h4 {
+    font-size: 1.2rem;
+    color: #4C3B99;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Info Table Styles */
+.info-table88 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-row88 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f8f9ff;
+}
+
+.info-row88:last-child {
+    border-bottom: none;
+}
+
+.info-property88 {
+    font-weight: 600;
+    color: #6B7280;
+    font-size: 0.9rem;
+}
+
+.info-value88 {
+    font-weight: 500;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+/* Fees Table Styles */
+.fees-table88 {
+    margin-bottom: 20px;
+}
+
+.fees-table88 table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.fees-table88 th {
+    background: #f8f9ff;
+    padding: 12px 8px;
+    text-align: left;
+    font-weight: 600;
+    color: #4C3B99;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fees-table88 td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #f8f9ff;
+    color: #374151;
+}
+
+.fees-table88 .total-row88 {
+    background: #f8f9ff;
+    font-weight: 700;
+}
+
+.fees-table88 .total-row88 td {
+    border-bottom: none;
+    color: #4C3B99;
+}
+
+.payment-amount88 {
+    font-weight: 600;
+    color: #4C3B99;
+}
+
+.status-badge88 {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge88.paid88 {
+    background: #ECFDF5;
+    color: #065F46;
+}
+
+.status-badge88.due88 {
+    background: #FEF2F2;
+    color: #991B1B;
+}
+
+.status-badge88.pending88 {
+    background: #FFFBEB;
+    color: #92400E;
+}
+
+/* Payment Progress */
+.payment-progress88 {
+    margin-top: 16px;
+}
+
+.progress-bar88 {
+    width: 100%;
+    height: 8px;
+    background: #E5E7EB;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill88 {
+    height: 100%;
+    background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.progress-text88 {
+    font-size: 0.8rem;
+    color: #6B7280;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Attendance Styles - Without Monthly Bars */
+.attendance-stats88 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.attendance-item88 {
+    text-align: center;
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid;
+}
+
+.attendance-item88.present88 {
+    border-color: #10B981;
+    background: #ECFDF5;
+}
+
+.attendance-item88.absent88 {
+    border-color: #EF4444;
+    background: #FEF2F2;
+}
+
+.attendance-item88.leave88 {
+    border-color: #3B82F6;
+    background: #EFF6FF;
+}
+
+.attendance-item88.total88 {
+    border-color: #6B7280;
+    background: #F9FAFB;
+}
+
+.attendance-count88 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4C3B99;
+    line-height: 1;
+}
+
+.attendance-label88 {
+    font-size: 0.75rem;
+    color: #6B7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+.attendance-percentage88 {
+    text-align: center;
+    padding: 20px;
+}
+
+.percentage-circle88 {
+    display: inline-block;
+    text-align: center;
+}
+
+.percentage-value88 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #4C3B99;
+    line-height: 1;
+}
+
+.percentage-label88 {
+    font-size: 0.9rem;
+    color: #6B7280;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* Activities Styles */
+.activities-list88 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-item88 {
+    padding: 16px;
+    background: #f8f9ff;
+    border-radius: 12px;
+    border-left: 4px solid #6A5BE2;
+}
+
+.activity-header88 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.activity-header88 h5 {
+    margin: 0;
+    color: #4C3B99;
+    font-size: 1rem;
+}
+
+.activity-role88 {
+    background: #6A5BE2;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.activity-achievements88 {
+    font-size: 0.85rem;
+    color: #6B7280;
+}
+
+/* Communication Log */
+.communication-list88 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.log-item88 {
+    padding: 16px;
+    background: #f8f9ff;
+    border-radius: 12px;
+    border-left: 4px solid #10B981;
+}
+
+.log-date88 {
+    font-size: 0.8rem;
+    color: #6B7280;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.log-type88 {
+    font-size: 0.9rem;
+    color: #4C3B99;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.log-summary88 {
+    font-size: 0.85rem;
+    color: #374151;
+}
+
+/* Documents Styles */
+.documents-list88 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.document-item88 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: #f8f9ff;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+}
+
+.document-icon88 {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+}
+
+.document-details88 {
+    flex: 1;
+}
+
+.document-name88 {
+    font-weight: 600;
+    color: #4C3B99;
+    margin-bottom: 4px;
+}
+
+.document-meta88 {
+    display: flex;
+    gap: 16px;
+    font-size: 0.8rem;
+    color: #6B7280;
+}
+
+.document-type88 {
+    background: #E5E7EB;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.download-btn88 {
+    background: #4C3B99;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn88:hover {
+    background: #6A5BE2;
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .overview-grid88 {
+        grid-template-columns: 1fr;
+    }
+    
+    .compact-header-content88 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .header-stats-compact88 {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .student-profile-page88 {
+        padding: 15px;
+    }
+    
+    .student-basic-compact88 {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .student-details-compact88 {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .profile-tabs88 {
+        flex-direction: column;
+    }
+    
+    .attendance-stats88 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .header-stats-compact88 {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-row88 {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .attendance-stats88 {
+        grid-template-columns: 1fr;
+    }
+    
+    .document-item88 {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .document-meta88 {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .activity-header88 {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+}

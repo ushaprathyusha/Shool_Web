@@ -1,0 +1,571 @@
+/* StaffManagement.css - With Scrollable Table */
+.staff-management {
+  padding: 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Loading Animation */
+.staff-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 15px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #e3e3e3;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+}
+
+.staff-loading p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Header Styles */
+.staff-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.staff-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.staff-subtitle {
+  font-size: 1rem;
+  margin: 8px 0 0 0;
+  opacity: 0.9;
+}
+
+.staff-count {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+.export-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.export-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Filters Section */
+.filters-section {
+  margin-bottom: 20px;
+}
+
+.filters-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  min-width: 400px;
+}
+
+.search-input {
+  border-radius: 10px;
+  border: 2px solid #e1e5e9;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.1);
+}
+
+.refresh-btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid #6c757d;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.department-select {
+  border-radius: 10px;
+  border: 2px solid #e1e5e9;
+  padding: 10px 16px;
+  min-width: 200px;
+  font-size: 0.9rem;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.department-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.1);
+}
+
+/* Scrollable Table Container */
+.table-scroll-container {
+  background: white;
+  border-radius: 15px;
+  padding: 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.table-section {
+  margin-bottom: 0;
+}
+
+.table-container {
+  background: transparent;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.staff-table-wrapper {
+  border-radius: 0;
+  font-size: 0.85rem;
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.staff-table {
+  margin: 0;
+  font-size: 0.85rem;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.table-header {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table-header th {
+  border: none;
+  padding: 15px 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  background: inherit;
+}
+
+.staff-row {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.staff-row:last-child {
+  border-bottom: none;
+}
+
+.staff-row td {
+  padding: 12px 10px;
+  vertical-align: middle;
+  border: none;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* Avatar Styles */
+.staff-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #e1e5e9;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge Styles */
+.id-badge {
+  background: #f8f9fa;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  color: #495057;
+  border: 1px solid #e9ecef;
+  font-size: 0.8rem;
+}
+
+.designation-badge {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.department-tag {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid #bbdefb;
+}
+
+.type-badge {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.type-badge.permanent {
+  background: #e8f5e8;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.type-badge.contract {
+  background: #fff3e0;
+  color: #ef6c00;
+  border: 1px solid #ffe0b2;
+}
+
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.active {
+  background: #4caf50;
+  color: white;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.status-badge.inactive {
+  background: #f44336;
+  color: white;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.3);
+}
+
+/* Date Styles */
+.date-text {
+  font-size: 0.8rem;
+  color: #495057;
+  font-weight: 500;
+  background: #f8f9fa;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+  font-family: 'Courier New', monospace;
+}
+
+.performance-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.performance-badge.excellent {
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.performance-badge.good {
+  background: linear-gradient(135deg, #2196f3, #1976d2);
+  color: white;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+}
+
+.performance-badge.average {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3);
+}
+
+/* Attendance Styles */
+.attendance-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.attendance-progress {
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 80px;
+  border: 1px solid #e9ecef;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
+}
+
+.attendance-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #495057;
+  min-width: 35px;
+  text-align: center;
+}
+
+/* Text Styles */
+.staff-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.staff-email a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.staff-email a:hover {
+  color: #007bff;
+}
+
+.staff-phone {
+  font-size: 0.8rem;
+  color: #495057;
+  font-family: 'Courier New', monospace;
+}
+
+/* No Data State */
+.no-data {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+.no-data-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.no-data-icon {
+  font-size: 3rem;
+  opacity: 0.7;
+}
+
+.no-data-text h4 {
+  color: #6c757d;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.no-data-text p {
+  color: #8a93a2;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Pagination */
+.pagination-section {
+  margin-top: 0;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.pagination-btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 500;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.page-info {
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Custom Scrollbar */
+.staff-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.staff-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.staff-table-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.staff-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.staff-table-wrapper::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .staff-table-wrapper {
+    font-size: 0.8rem;
+  }
+  
+  .table-header th {
+    font-size: 0.75rem;
+    padding: 12px 8px;
+  }
+  
+  .staff-row td {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-management {
+    padding: 15px 10px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .staff-title {
+    font-size: 1.5rem;
+  }
+  
+  .filters-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .search-box {
+    min-width: 100%;
+  }
+  
+  .table-scroll-container {
+    border-radius: 10px;
+  }
+  
+  .pagination-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .staff-table-wrapper {
+    max-height: 500px;
+  }
+}
+
+/* Animation Enhancements */
+.staff-row:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+}
+
+/* Focus states for accessibility */
+.search-input:focus,
+.department-select:focus,
+.pagination-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Smooth transitions for all interactive elements */
+.staff-avatar,
+.id-badge,
+.designation-badge,
+.department-tag,
+.type-badge,
+.status-badge,
+.performance-badge,
+.date-text {
+  transition: all 0.3s ease;
+}
